@@ -1,0 +1,12 @@
+#current_word {
+  span {
+    font-size: 5rem;
+  }
+  .loose{
+    color: var(--color-notFindLetter);
+  }
+  .finded{
+    color: var(--color-react);
+  }
+}
+
