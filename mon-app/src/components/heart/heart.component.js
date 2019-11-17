@@ -5,7 +5,7 @@ import './heart.scss'
 
 const Heart = ({trys , maxTrys}) => {
    return (
-      <div id={"life"} >{
+      <div id={"life"} ><div className={"container"}>{
          trysToHeart(trys, maxTrys).map(
             (value , key ) => {
                return <span
@@ -15,6 +15,7 @@ const Heart = ({trys , maxTrys}) => {
             }
          )
       }
+      </div>
       </div>
    )
 };

@@ -1,46 +1,55 @@
 #life {
-  .heart {
-    background-color: red;
-    display: inline-block;
-    height: 30px;
-    margin: 15px;
-    position: relative;
-    top: 0;
-    transform: rotate(-45deg);
-    width: 30px;
-  }
+  .container {
+    display: flex;
+    justify-content: center;
 
-  .heart:before,
-  .heart:after {
-    content: "";
-    background-color: red;
-    border-radius: 50%;
-    height: 30px;
-    position: absolute;
-    width: 30px;
-  }
-
-  .heart:before {
-    top: -15px;
-    left: 0;
-  }
-
-  .heart:after {
-    left: 15px;
-    top: 0;
-  }
-  // full hearts
-  .isFull {
-    background: var(--color-react);
-    &::after, &::before{
-      background: var(--color-react)
+    .heart {
+      background-color: red;
+      display: inline-block;
+      height: 30px;
+      margin: 15px;
+      position: relative;
+      top: 0;
+      transform: rotate(-45deg);
+      width: 30px;
     }
-  }
-  // empty hearts
-  .isEmpty {
-    background: var(--color-notFindLetter);
-    &::after, &::before {
-      background: var(--color-notFindLetter)
+
+    .heart:before,
+    .heart:after {
+      content: "";
+      background-color: red;
+      border-radius: 50%;
+      height: 30px;
+      position: absolute;
+      width: 30px;
+    }
+
+    .heart:before {
+      top: -15px;
+      left: 0;
+    }
+
+    .heart:after {
+      left: 15px;
+      top: 0;
+    }
+
+    // full hearts
+    .isFull {
+      background: var(--color-react);
+
+      &::after, &::before {
+        background: var(--color-react)
+      }
+    }
+
+    // empty hearts
+    .isEmpty {
+      background: var(--color-notFindLetter);
+
+      &::after, &::before {
+        background: var(--color-notFindLetter)
+      }
     }
   }
 }

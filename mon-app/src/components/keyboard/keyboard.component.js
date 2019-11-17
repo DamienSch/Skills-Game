@@ -15,6 +15,7 @@ class Keyboard extends Component {
    render(){
       return(
          <div id={"keyboard"}>
+            <div className={"container"}>
             {
                this.props.alphabet.map(
                   (letter,key)=> {
@@ -30,6 +31,7 @@ class Keyboard extends Component {
                   }
                )
             }
+            </div>
          </div>
       )
    }

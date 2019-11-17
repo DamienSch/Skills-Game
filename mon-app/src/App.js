@@ -70,8 +70,8 @@ class App extends Component {
    render() {
       return(
          <div id="game">
-            <h2>Trouver mes competences</h2>
-            <h3>fait avec React.js</h3>
+            <h2 className={"mainTitle"}>Trouver mes competences</h2>
+            <h3 className={"subtitle"}>fait avec React.js</h3>
 
             {
                (this.state.currentWord !== null) &&
@@ -110,7 +110,9 @@ class App extends Component {
 
             {
                (this.state.currentWord === null || this.state.win === 1 || this.state.win === -1) &&
-               <button onClick={() => this.initGame()}>Nouvelle partie</button>
+               <div className={"btnContainer"}>
+                  <button className={"btn draw-border"} onClick={() => this.initGame()}>Nouvelle partie</button>
+               </div>
             }
 
          </div>

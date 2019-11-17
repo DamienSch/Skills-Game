@@ -1,12 +1,27 @@
 #current_word {
-  span {
-    font-size: 5rem;
-  }
-  .loose{
-    color: var(--color-notFindLetter);
-  }
-  .finded{
-    color: var(--color-react);
-  }
+   .container {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0 10px 0;
+      font-family: Roboto;
+      .notFinded{
+         font-size: 5rem;
+         font-family: Roboto;
+         margin: 10px;
+         color: var(--color-font);
+      }
+
+      .loose {
+         color: var(--color-notFindLetter);
+         font-family: Roboto;
+         font-size: 5rem;
+      }
+
+      .finded {
+         color: var(--color-react);
+         font-family: Roboto;
+         font-size: 5rem;
+      }
+   }
 }
 
